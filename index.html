@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h2>Conversor de Lingos a USDT y viceversa</h2>
+
+    <label for="cantidadInput">Cantidad de Lingos:</label>
+    <input type="number" id="cantidadInput" placeholder="Ingrese la cantidad"/>
+
+    <br>
+
+    <label for="conversionType">Convertir a:</label>
+    <select id="conversionType" onchange="cambiarLabel()">
+        <option value="lingosToUSDT">Lingos a USDT</option>
+        <option value="usdtToLingos">USDT a L</option>
+    </select>
+
+    <br>
+
+    <label for="lingoValue">Valor del Lingo en USDT:</label>
+    <input type="number" id="lingoValue" placeholder="Valor por defecto: 1.5" step="any" />
+
+    <br><br>
+
+    <button onclick="convertir()">Convertir</button>
+
+    <h3>Resultado:</h3>
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <h3>Developed by: juliandav096 (Habbo.es)</h3>
+    </footer>
+</body>
+
+</html>
